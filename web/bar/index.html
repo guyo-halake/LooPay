@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ember & Oak Bar</title>
+    <meta name="description" content="A cozy modern bar with crafted cocktails and small plates." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="logo">Ember<span>&</span>Oak</a>
+        <nav class="nav" id="nav">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#reception" class="nav-link">Reception</a>
+          <a href="#menu" class="nav-link">Menu</a>
+          <a href="#gallery" class="nav-link">Gallery</a>
+          <a href="#reserve" class="nav-link btn btn--sm">Reserve</a>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Open Menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="home" aria-label="Welcome">
+        <div class="overlay"></div>
+        <div class="container hero-content">
+          <h1 class="hero-title">Crafted Cocktails. Warm Conversations.</h1>
+          <p class="hero-subtitle">Settle into the glow. Stay for the flavor.</p>
+          <div class="hero-cta">
+            <a href="#menu" class="btn">Explore Menu</a>
+            <a href="#reserve" class="btn btn--ghost">Book a Table</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="container grid grid--2">
+          <div>
+            <h2 class="section-title">About Us</h2>
+            <p>
+              At Ember & Oak, we blend classic mixology with modern flair. Our bartenders
+              craft each drink with seasonal ingredients, while our kitchen serves
+              elevated small plates meant for sharing.
+            </p>
+            <p>
+              Whether it’s a date night or a late-night rendezvous, our warm lighting,
+              curated music, and attentive service set the tone.
+            </p>
+          </div>
+          <div class="about-card">
+            <ul class="highlights">
+              <li>Signature cocktails</li>
+              <li>Hand-picked wines</li>
+              <li>Local craft beers</li>
+              <li>Small plates & tapas</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reception / Events -->
+      <section class="section section--alt" id="reception">
+        <div class="container grid grid--2">
+          <div>
+            <h2 class="section-title">Reception & Private Events</h2>
+            <p>
+              Planning an intimate reception, birthday, or team night? Our lounge area and
+              high-top bar tables can be arranged for groups, with custom cocktail lists and
+              shared plates to match your vibe.
+            </p>
+            <ul class="highlights">
+              <li>Semi-private lounge for up to 30 guests</li>
+              <li>Customizable cocktail and food packages</li>
+              <li>Dedicated host and bartender</li>
+              <li>Ambient lighting and curated playlists</li>
+            </ul>
+            <div style="margin-top:14px">
+              <a class="btn" href="#reserve">Inquire & Reserve</a>
+            </div>
+          </div>
+          <div>
+            <div class="reception-visual" aria-label="Reception lounge"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu -->
+      <section class="section section--alt" id="menu">
+        <div class="container">
+          <h2 class="section-title center">Featured Menu</h2>
+          <div class="cards">
+            <article class="card">
+              <h3 class="card-title">Smoked Old Fashioned</h3>
+              <p class="card-desc">Bourbon, demerara, aromatic bitters, orange peel smoke.</p>
+              <div class="card-meta">$14</div>
+            </article>
+            <article class="card">
+              <h3 class="card-title">Citrus Gin Fizz</h3>
+              <p class="card-desc">London dry gin, lemon, orange blossom, soda cloud.</p>
+              <div class="card-meta">$12</div>
+            </article>
+            <article class="card">
+              <h3 class="card-title">Truffle Fries</h3>
+              <p class="card-desc">Hand-cut fries, parmesan, truffle aioli.</p>
+              <div class="card-meta">$9</div>
+            </article>
+            <article class="card">
+              <h3 class="card-title">Harissa Shrimp Skewers</h3>
+              <p class="card-desc">Charred shrimp, lime yogurt, micro herbs.</p>
+              <div class="card-meta">$13</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="section" id="gallery">
+        <div class="container">
+          <h2 class="section-title center">The Vibe</h2>
+          <div class="masonry">
+            <figure class="masonry-item" aria-label="Amber cocktail on bar top"></figure>
+            <figure class="masonry-item" aria-label="Candlelit table setting"></figure>
+            <figure class="masonry-item" aria-label="Bartender flaming orange peel"></figure>
+            <figure class="masonry-item" aria-label="Neon sign and bottles"></figure>
+            <figure class="masonry-item" aria-label="Couple toasting"></figure>
+            <figure class="masonry-item" aria-label="Chef plating small plates"></figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reserve -->
+      <section class="section section--alt" id="reserve">
+        <div class="container grid grid--2">
+          <div>
+            <h2 class="section-title">Reservations</h2>
+            <p>
+              We hold a few tables for walk-ins daily, but booking ensures your spot.
+              Parties of 6+ please call.
+            </p>
+            <ul class="info">
+              <li><strong>Hours:</strong> Tue–Sun, 5pm–1am</li>
+              <li><strong>Happy Hour:</strong> 5–7pm</li>
+              <li><strong>Phone:</strong> (555) 123-4567</li>
+            </ul>
+          </div>
+          <form class="form" id="reserveForm" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your full name" required />
+              <small class="error" data-for="name"></small>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+              <small class="error" data-for="email"></small>
+            </div>
+            <div class="form-grid">
+              <div class="form-row">
+                <label for="date">Date</label>
+                <input id="date" name="date" type="date" required />
+                <small class="error" data-for="date"></small>
+              </div>
+              <div class="form-row">
+                <label for="time">Time</label>
+                <input id="time" name="time" type="time" required />
+                <small class="error" data-for="time"></small>
+              </div>
+              <div class="form-row">
+                <label for="guests">Guests</label>
+                <select id="guests" name="guests" required>
+                  <option value="" disabled selected>Select</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                </select>
+                <small class="error" data-for="guests"></small>
+              </div>
+            </div>
+            <button class="btn" type="submit">Request Booking</button>
+            <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Ember & Oak. All rights reserved.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram" class="social">IG</a>
+          <a href="#" aria-label="Facebook" class="social">FB</a>
+          <a href="#" aria-label="TikTok" class="social">TT</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
